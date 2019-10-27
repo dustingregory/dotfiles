@@ -136,8 +136,13 @@ brew cask install discord
 # Remove outdated versions from the cellar.
 brew cleanup
 
-# Set the iterm2 and terminal font to nerdfonts
+# Set the iterm2 and terminal font to nerdfonts and other settings
 /usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Normal Font" "MesloLGLNerdFontComplete-Regular 12"' ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Rows" "22"' ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Columns" "98"' ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Scrollback Lines" "0"' ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Silence Bell" "1"' ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Unlimited Scrollback" "1"' ~/Library/Preferences/com.googlecode.iterm2.plist
 
 /usr/bin/osascript <<END
 tell application "Terminal"
