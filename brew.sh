@@ -116,6 +116,7 @@ brew install speedtest-cli
 brew install unrar
 brew install watch
 brew install youtube-dl
+brew install ansible
 
 brew cask install iterm2
 brew cask install google-chrome
