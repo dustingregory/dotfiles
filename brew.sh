@@ -129,7 +129,7 @@ brew cask install slack
 brew cask install microsoft-teams
 brew cask install virtualbox virtualbox-extension-pack
 brew cask install vagrant
-
+brew cask install discord
 
 
 
