@@ -124,12 +124,19 @@ brew tap homebrew/cask-fonts
 brew cask install font-meslo-nerd-font
 brew cask install visual-studio-cod
 brew cask install dotnet-sdk
+brew cask install slack
+brew cask install microsoft-teams
+brew cask install virtualbox virtualbox-extension-pack
+brew cask install vagrant
+
+
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
 
 # Set the iterm2 and terminal font to nerdfonts
-/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Normal Font" "MesloLGSNerdFontComplete-Regular 12"' ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Normal Font" "MesloLGLNerdFontComplete-Regular 12"' ~/Library/Preferences/com.googlecode.iterm2.plist
 
 /usr/bin/osascript <<END
 tell application "Terminal"
