@@ -15,13 +15,13 @@ BREW_PREFIX=$(brew --prefix)
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-#brew install coreutils
-#ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
+brew install coreutils
+ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install some other useful utilities like `sponge`.
 #brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
-#brew install findutils
+brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 #brew install gnu-sed --with-default-names
 # Install Bash 4.
@@ -44,7 +44,7 @@ brew install npm
 
 # Install more recent versions of some macOS tools.
 brew install vim 
-#brew install grep
+brew install grep
 #brew install openssh
 brew install screen
 #brew install php
@@ -59,7 +59,7 @@ brew install screen
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 #brew install aircrack-ng
 #brew install bfg
-#brew install binutils
+brew install binutils
 #brew install binwalk
 #brew install cifer
 #brew install dex2jar
@@ -117,13 +117,14 @@ brew install unrar
 brew install watch
 brew install youtube-dl
 brew install ansible
-
+brew install coreutils
+brew install rbenv ruby-build
 brew cask install iterm2
 brew cask install google-chrome
 
 brew tap homebrew/cask-fonts
 brew cask install font-meslo-nerd-font
-brew cask install visual-studio-cod
+brew cask install visual-studio-code
 brew cask install dotnet-sdk
 brew cask install slack
 brew cask install microsoft-teams
