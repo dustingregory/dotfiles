@@ -84,9 +84,18 @@ plugins=(
 	python	
 	rsync
 	sudo
+  zsh-completions
+	kubectl
+  iterm2
+	screen
+	systemd
+	vagrant
+	vscode
 )
 
 source $ZSH/oh-my-zsh.sh
+
+autoload -U compinit && compinit
 
 # User configuration
 
@@ -143,4 +152,5 @@ do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 
-unset file;
+unset file;export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"

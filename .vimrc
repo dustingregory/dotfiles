@@ -9,6 +9,8 @@ set nocompatible
 set clipboard=unnamed
 " Enhance command-line completion
 set wildmenu
+" Set AutoIndent by default
+set ai
 " Allow cursor keys in insert mode
 set esckeys
 " Allow backspace in insert mode
